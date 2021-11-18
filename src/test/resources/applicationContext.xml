@@ -20,10 +20,10 @@
        class="com.sg.VendingMachine.dao.VendingMachineDaoFileImpl"/>
    
     <bean id="vendingMachineDaoStub" 
-       class="com.sg.VendingMachine.dao.VendingMachineDaoStubImpl"/>
+       class="com.sg.VendingMachine.service.VendingMachineDaoStubImpl"/>
    
     <bean id="auditDaoStub" 
-       class="com.sg.VendingMachine.dao.VendingMachineAuditDaoStubImpl"/>
+       class="com.sg.VendingMachine.service.VendingMachineAuditDaoStubImpl"/>
    
     <bean id="serviceLayer" 
        class="com.sg.VendingMachine.service.VendingMachineServiceLayerImpl">

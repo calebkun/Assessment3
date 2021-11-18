@@ -5,7 +5,6 @@
  */
 package com.sg.VendingMachine;
 
-import com.sg.VendingMachine.service.*;
 
 import com.sg.VendingMachine.controller.VendingMachineController;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

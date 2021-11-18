@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.454" tests="5" errors="5" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.448" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+7"/>
@@ -64,74 +64,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testValidRemoveItem" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.006">
-    <error message="Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name &apos;vendingMachineDaoStub&apos; defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl" type="org.springframework.beans.factory.CannotLoadBeanClassException"><![CDATA[org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-Caused by: java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-]]></error>
-    <system-err><![CDATA[Nov 18, 2021 11:19:18 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1356d4d4: startup date [Thu Nov 18 11:19:18 EST 2021]; root of context hierarchy
-Nov 18, 2021 11:19:18 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext refresh
-WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-]]></system-err>
-  </testcase>
-  <testcase name="testGetAllItems" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0">
-    <error message="Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name &apos;vendingMachineDaoStub&apos; defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl" type="org.springframework.beans.factory.CannotLoadBeanClassException"><![CDATA[org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-Caused by: java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-]]></error>
-    <system-err><![CDATA[Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ab7395e: startup date [Thu Nov 18 11:19:19 EST 2021]; root of context hierarchy
-Nov 18, 2021 11:19:19 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext refresh
-WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-]]></system-err>
-  </testcase>
-  <testcase name="testGetItem" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0">
-    <error message="Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name &apos;vendingMachineDaoStub&apos; defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl" type="org.springframework.beans.factory.CannotLoadBeanClassException"><![CDATA[org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-Caused by: java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-]]></error>
-    <system-err><![CDATA[Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13330ac6: startup date [Thu Nov 18 11:19:19 EST 2021]; root of context hierarchy
-Nov 18, 2021 11:19:19 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext refresh
-WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-]]></system-err>
-  </testcase>
-  <testcase name="testRemoveItemOutOfStock" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0">
-    <error message="Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name &apos;vendingMachineDaoStub&apos; defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl" type="org.springframework.beans.factory.CannotLoadBeanClassException"><![CDATA[org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-Caused by: java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-]]></error>
-    <system-err><![CDATA[Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52c3cb31: startup date [Thu Nov 18 11:19:19 EST 2021]; root of context hierarchy
-Nov 18, 2021 11:19:19 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext refresh
-WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-]]></system-err>
-  </testcase>
-  <testcase name="testRemoveItemInsufficientFunds" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0">
-    <error message="Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name &apos;vendingMachineDaoStub&apos; defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl" type="org.springframework.beans.factory.CannotLoadBeanClassException"><![CDATA[org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-Caused by: java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-	at com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest.<init>(VendingMachineServiceLayerImplTest.java:42)
-]]></error>
-    <system-err><![CDATA[Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@32a68f4f: startup date [Thu Nov 18 11:19:19 EST 2021]; root of context hierarchy
-Nov 18, 2021 11:19:19 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
-INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-Nov 18, 2021 11:19:19 AM org.springframework.context.support.ClassPathXmlApplicationContext refresh
-WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.sg.VendingMachine.dao.VendingMachineDaoStubImpl] for bean with name 'vendingMachineDaoStub' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.sg.VendingMachine.dao.VendingMachineDaoStubImpl
-]]></system-err>
-  </testcase>
+  <testcase name="testValidRemoveItem" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.007"/>
+  <testcase name="testGetAllItems" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0"/>
+  <testcase name="testGetItem" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.002"/>
+  <testcase name="testRemoveItemOutOfStock" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.001"/>
+  <testcase name="testRemoveItemInsufficientFunds" classname="com.sg.VendingMachine.service.VendingMachineServiceLayerImplTest" time="0.003"/>
 </testsuite>
