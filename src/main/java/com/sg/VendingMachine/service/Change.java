@@ -11,6 +11,7 @@ import java.math.RoundingMode;
         
 
 /**
+ * Change construct with methods to convert BigDecimal values ($) into change.
  *
  * @author calebdiaz
  */
@@ -23,6 +24,13 @@ public class Change {
     private BigDecimal dimes;
     private BigDecimal quarters;
     
+    /**
+     * Takes in user's money and cost of item as strings, converts them to BigDecimal objects
+     * and
+     * @param input
+     * @param cost
+     * @return 
+     */
     public String getChange(String input, String cost){
         BigDecimal inputBD = new BigDecimal(input);
         BigDecimal costBD = new BigDecimal(cost);

@@ -12,17 +12,22 @@ import com.sg.VendingMachine.dto.Item;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 
 /**
  *
  * @author calebdiaz
  */
+
+@Component
 public class VendingMachineServiceLayerImpl implements VendingMachineServiceLayer{
     
     private VendingMachineDao dao;
     private VendingMachineAuditDao auditDao;
     
+    @Autowired
     public VendingMachineServiceLayerImpl(VendingMachineDao dao, VendingMachineAuditDao auditDao){
         this.dao = dao;
         this.auditDao = auditDao;

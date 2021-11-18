@@ -45,7 +45,7 @@
     <property name="java.class.path" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,6 +64,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testRemoveGetItem" classname="com.sg.VendingMachine.dao.VendingMachineDaoFileImplTest" time="0.073"/>
-  <testcase name="testGetAllItems" classname="com.sg.VendingMachine.dao.VendingMachineDaoFileImplTest" time="0.003"/>
+  <testcase name="testRemoveGetItem" classname="com.sg.VendingMachine.dao.VendingMachineDaoFileImplTest" time="0.07"/>
+  <testcase name="testGetAllItems" classname="com.sg.VendingMachine.dao.VendingMachineDaoFileImplTest" time="0.005"/>
 </testsuite>

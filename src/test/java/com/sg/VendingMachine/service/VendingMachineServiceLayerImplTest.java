@@ -15,20 +15,32 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
  * @author calebdiaz
  */
+
 public class VendingMachineServiceLayerImplTest {
     
     private VendingMachineServiceLayer service;
     
+    @Autowired
     public VendingMachineServiceLayerImplTest() {
-        VendingMachineDao dao = new VendingMachineDaoStubImpl();
-        VendingMachineAuditDao auditDao = new VendingMachineAuditDaoStubImpl();
+//        VendingMachineDao dao = new VendingMachineDaoStubImpl();
+//        VendingMachineAuditDao auditDao = new VendingMachineAuditDaoStubImpl();
         
-        service = new VendingMachineServiceLayerImpl(dao, auditDao);
+//        AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext();
+//        appContext.scan("com.sg.VendingMachine.service");
+//        appContext.refresh();
+//        
+//        service = appContext.getBean("serviceLayer", VendingMachineServiceLayer.class);
+
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        service = ctx.getBean("serviceLayer", VendingMachineServiceLayer.class);
     }
     
     @BeforeEach

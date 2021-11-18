@@ -10,11 +10,14 @@ import com.sg.VendingMachine.dao.VendingMachinePersistenceException;
 import com.sg.VendingMachine.dto.Item;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author calebdiaz
  */
+
+@Component
 public class VendingMachineDaoStubImpl implements VendingMachineDao {
     
     public Item onlyItem;

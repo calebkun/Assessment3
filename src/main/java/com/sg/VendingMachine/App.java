@@ -5,16 +5,10 @@
  */
 package com.sg.VendingMachine;
 
+import com.sg.VendingMachine.service.*;
+
 import com.sg.VendingMachine.controller.VendingMachineController;
-import com.sg.VendingMachine.dao.VendingMachineAuditDao;
-import com.sg.VendingMachine.dao.VendingMachineAuditDaoFileImpl;
-import com.sg.VendingMachine.dao.VendingMachineDao;
-import com.sg.VendingMachine.dao.VendingMachineDaoFileImpl;
-import com.sg.VendingMachine.service.VendingMachineServiceLayerImpl;
-import com.sg.VendingMachine.service.VendingMachineServiceLayer;
-import com.sg.VendingMachine.ui.UserIO;
-import com.sg.VendingMachine.ui.UserIOConsoleImpl;
-import com.sg.VendingMachine.ui.VendingMachineView;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  *
@@ -23,15 +17,12 @@ import com.sg.VendingMachine.ui.VendingMachineView;
 public class App {
     public static void main(String args[]){
         
-        UserIO myIO = new UserIOConsoleImpl();
-        VendingMachineView myView = new VendingMachineView(myIO);
+        AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext();
+        appContext.scan("com.sg.VendingMachine");
+        appContext.refresh();
         
-        VendingMachineDao myDao = new VendingMachineDaoFileImpl();
-        VendingMachineAuditDao myAuditDao = new VendingMachineAuditDaoFileImpl();
-        VendingMachineServiceLayer myService = new VendingMachineServiceLayerImpl(myDao, myAuditDao);
-        
-        VendingMachineController controller = new VendingMachineController(myView, myService);
-        controller.run();
+        VendingMachineController controller = appContext.getBean("vendingMachineController", VendingMachineController.class);
+        controller.run(); // run our app
     }
     
 }

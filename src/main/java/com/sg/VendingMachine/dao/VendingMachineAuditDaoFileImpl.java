@@ -9,21 +9,31 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDateTime;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author calebdiaz
  */
+
+@Component
 public class VendingMachineAuditDaoFileImpl implements VendingMachineAuditDao {
     
     public static final String AUDIT_FILE = "audit.txt";
+    
+    /**
+     * Implementation of audit dao method.
+     * 
+     * @param entry
+     * @throws VendingMachinePersistenceException 
+     */
     public void writeAuditEntry(String entry) throws VendingMachinePersistenceException {
         PrintWriter out;
         try {
             out = new PrintWriter(new FileWriter(AUDIT_FILE, true));
         } catch (IOException e) {
             throw new VendingMachinePersistenceException("Could not persist audit information.", e);
-        }
+        } // Time stamp along with entry persisted
         LocalDateTime timestamp = LocalDateTime.now(); out.println(timestamp.toString() + " : " + entry); out.flush();
     }
     

@@ -11,6 +11,12 @@ package com.sg.VendingMachine.dao;
  */
 public interface VendingMachineAuditDao {
     
+    /**
+     * Takes in entry and writes to audit log.
+     * 
+     * @param entry
+     * @throws VendingMachinePersistenceException 
+     */
     public void writeAuditEntry(String entry) throws VendingMachinePersistenceException;
     
 }

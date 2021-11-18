@@ -7,16 +7,21 @@ package com.sg.VendingMachine.ui;
 
 import com.sg.VendingMachine.dto.Item;
 import java.util.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author calebdiaz
  */
+
+@Component
 public class VendingMachineView {
     
     // UserIO member used to display to and get from the user information.
     final UserIO io;
     
+    @Autowired
     public VendingMachineView(UserIO io){
         this.io = io;
     }

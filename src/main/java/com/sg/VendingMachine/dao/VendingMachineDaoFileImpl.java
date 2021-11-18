@@ -13,11 +13,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author calebdiaz
  */
+
+@Component
 public class VendingMachineDaoFileImpl implements VendingMachineDao {
     
     // constants used for file persistence
@@ -31,6 +34,7 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao {
         this.INVENTORY_FILE = "inventory.txt";
     }
     
+    // overloaded constructor to allow for different inventory file to be injected
     public VendingMachineDaoFileImpl(String file_name){
         this.INVENTORY_FILE = file_name;
     }
@@ -189,7 +193,12 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao {
         out.close();
     }
 
-    
+    /**
+     * Impl of dao method.
+     * 
+     * @return list of Items containing all items in inventory
+     * @throws VendingMachinePersistenceException 
+     */
     @Override
     public List<Item> getAllItems()
         throws VendingMachinePersistenceException{
@@ -197,6 +206,13 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao {
         return new ArrayList<Item>(inventory.values());
     };
     
+    /**
+     * Impl of dao method.
+     * 
+     * @param itemNumber
+     * @return Item object
+     * @throws VendingMachinePersistenceException 
+     */
     @Override
     public Item getItem(int itemNumber)
         throws VendingMachinePersistenceException{
@@ -204,6 +220,13 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao {
         return inventory.get(itemNumber);
     };
     
+    /**
+     * Impl of dao method.
+     * 
+     * @param itemNumber
+     * @return Item object
+     * @throws VendingMachinePersistenceException 
+     */
     @Override
     public Item removeItem(int itemNumber)
         throws VendingMachinePersistenceException{
